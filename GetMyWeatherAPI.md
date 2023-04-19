@@ -1,15 +1,15 @@
 # GetMyWeather API Documentation
 
-Welcome to the documentation for the GetMyWeather API! This API provides highly customizable weather information for web developers to include in their applications or websites. 
+Welcome to the documentation for the **GetMyWeather API**! This API provides highly customizable weather information for web developers to include in their applications or websites. 
 
 
 ## Introduction
 
-The GetMyWeather API provides up-to-date and reliable weather information for developers to integrate into their web applications. The API allows developers to retrieve weather information based on their desired location, date and time, and radius. The getWeather method returns an HTML package containing the requested weather data.
+The **GetMyWeather API** provides up-to-date and reliable weather information for developers to integrate into their web applications. The API allows developers to retrieve weather information based on their desired location, date and time, and radius. The *getWeather* method returns an HTML package containing the requested weather data.
 
 ## Prerequisites for use
 
-To use the getWeather method, you need an API key. You can register for an API key at https://getmyweather.com. Cost information is provided on the website.
+To use the *getWeather* method, you need an API key. You can register for an API key at https://getmyweather.com. Cost information is provided on the website.
 
 ## How to use GetMyWeather
 
@@ -35,4 +35,10 @@ The getWeather method has the following parameters:
 |time       | optional          |the time to retrieve weather data for (in the format "HH:MM:SS")|
 |trust      |optional           |a value between 1 and 100 that represents the reliability of the forecast (1 is very unreliable, 100 is absolutely reliable). The default value is 100|
 
+## Trust Value
+
+The *trust* parameter is a value between 1 and 100 that represents the reliability of the forecast (1 is very unreliable, 100 is absolutely reliable). The *trust* value can be affected by the specificity of the location, date, and time parameters. A large *radius* value (area of the forecast) and/or a large *time* value (time in the future of the forecast) will decrease the *trust* value (the reliability of the forecast). The trust value can be used by web developers to decide how to present the weather information to their users. 
+
+## Errors
+Possible error conditions include invalid API keys and invalid parameter values. If an error occurs, the *getWeather* method will return an error message instead of the HTML package.
 
