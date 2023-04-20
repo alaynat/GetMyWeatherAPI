@@ -2,7 +2,7 @@
 
 Welcome to the documentation for the **GetMyWeather API**! This API provides highly customizable weather information for web developers to include in their applications or websites. 
 
-# Table of Contents
+## Table of Contents
 - [Introduction](#introduction)
 - [Prerequisites for Use](#prerequisites-for-use)
 - [Parameters](#parameters)
