@@ -26,12 +26,10 @@ The getWeather method has the following parameters:
 To initialize the API in an HTML page, include the following code in the head section of the HTML document:
 <div id="forecast"></div>
 
+## Example JavaScript 
 #### Initializing the getWeather method
 <script type="text/javascript">
-var weatherForecast;
-function init() {
-weatherForecast =
-new getWeather(document.getElementById('forecast')}
+  var weatherForecast; function init() {weatherForecast = new getWeather(document.getElementById('forecast')}
 </script>
 
 #### Calling the getWeather method
