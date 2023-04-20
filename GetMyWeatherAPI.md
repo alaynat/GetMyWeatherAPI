@@ -49,8 +49,8 @@ src="https://www.getmyweather.com/getWeather?key=<YOUR_KEY>&callback=init&locati
 ```
 
 #### Returning the package
+Upon success, the *getWeather* method returns the following HTML structure (values are samples).
 ```html
-Upon success, the getWeather function returns the following HTML structure (values are samples).
 <div class="forecast">
 <div class="temperature">78</div>
 <div class="windspeed">15</div>
