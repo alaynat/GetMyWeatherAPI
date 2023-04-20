@@ -9,7 +9,7 @@ The **GetMyWeather API** provides up-to-date and reliable weather information fo
 
 ## Prerequisites for use
 
-To use the *getWeather* method, you need an API key. You can register for an API key at https://getmyweather.com. Cost information is provided on the website.
+To use the *getWeather* method, you need an API key. You can register for an API key at [https://getmyweather.com](https://getmyweather.com). Cost information is provided on the website.
 
 ## Parameters
 The getWeather method has the following parameters:
@@ -44,7 +44,7 @@ src="https://www.getmyweather.com/getWeather?key=<YOUR_KEY>&callback=init&locati
 </script>
 ```
 
-#### Sample return package
+#### Returning the package
 ```html
 Upon success, the getWeather function returns the following HTML structure (values are samples).
 <div class="forecast">
@@ -62,7 +62,7 @@ The *getWeather* method takes an object as its first parameter, with properties 
 The HTML package returned by the *getWeather* method includes the requested weather data, formatted according to the API's specifications. The trust parameter can affect the trust value (the reliability of the forecast), as described below.
 
 
-## Trust Value
+### Trust Value
 
 The *trust* parameter is a value between 1 and 100 that represents the reliability of the forecast (1 is very unreliable, 100 is absolutely reliable). The *trust* value can be affected by the specificity of the location, date, and time parameters. A large *radius* value (area of the forecast) and/or a large *time* value (time in the future of the forecast) will decrease the *trust* value (the reliability of the forecast). The trust value can be used by web developers to decide how to present the weather information to their users. 
 
