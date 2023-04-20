@@ -27,7 +27,7 @@ The getWeather method has the following parameters:
 
 ## How to use GetMyWeather
 
-To initialize the API in an HTML page, include the following code in the head section of the HTML document:
+GetMyWeather will replace the following HTML with the retuned results:
 
 ```html
 <div id="forecast"> </div>
