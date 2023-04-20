@@ -27,7 +27,7 @@ The getWeather method has the following parameters:
 
 ## How to use GetMyWeather
 
-GetMyWeather will replace the following HTML with the retuned results:
+**GetMyWeather** replaces the following HTML with the retuned results:
 
 ```html
 <div id="forecast"> </div>
