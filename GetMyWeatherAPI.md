@@ -47,6 +47,7 @@ The getWeather method has the following parameters:
 src="https://www.getmyweather.com/getWeather?key=<YOUR_KEY>&callback=init&location=<LATITUDE>:<LONGITUDE>&specificity=<SPECIFICITY>&time=<TIME>">
 </script>
 ```
+Replace YOUR_KEY with your API key.
 
 #### Returning the package
 Upon success, the *getWeather* method returns the following HTML structure (values are samples).
@@ -59,8 +60,6 @@ Upon success, the *getWeather* method returns the following HTML structure (valu
 </div>
 ```
 
-
-Replace YOUR_KEY with your API key.
 The *getWeather* method takes an object as its first parameter, with properties for the parameters listed above. The second parameter is a callback function that takes the returned HTML package as its argument.
 
 The HTML package returned by the *getWeather* method includes the requested weather data, formatted according to the API's specifications. The trust parameter can affect the trust value (the reliability of the forecast), as described below.
@@ -68,8 +67,10 @@ The HTML package returned by the *getWeather* method includes the requested weat
 
 ### Trust Value
 
-The *trust* parameter is a value between 1 and 100 that represents the reliability of the forecast (1 is very unreliable, 100 is absolutely reliable). The *trust* value can be affected by the specificity of the location, date, and time parameters. A large *radius* value (area of the forecast) and/or a large *time* value (time in the future of the forecast) will decrease the *trust* value (the reliability of the forecast). The trust value can be used by web developers to decide how to present the weather information to their users. 
+The *trust* parameter is a value between 1 and 100 that represents the reliability of the forecast (1 is very unreliable, 100 is absolutely reliable). The *trust* value can be affected by the specificity of the location, date, and time parameters. A large *radius* value and/or a large *time* value will decrease the *trust* value. The *trust* value can be used by web developers to decide how to present the weather information to their users. 
+
+**GetMyWeather API** will return the historical average if the forecast is more than two weeks in the future.
 
 ## Errors
-Possible error conditions include invalid API keys and invalid parameter values. If an error occurs, the *getWeather* method will return an error message instead of the HTML package.
+Possible error conditions include invalid API keys and invalid parameter values. If an error occurs, the *getWeather* method will return an error message instead of the HTML package. 
 
