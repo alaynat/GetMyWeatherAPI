@@ -25,21 +25,27 @@ The getWeather method has the following parameters:
 
 To initialize the API in an HTML page, include the following code in the head section of the HTML document:
 
-<div id="forecast">
-</div>
+```html
+<div id="forecast"> </div>
+```
 
 ## Example JavaScript 
 #### Initializing the getWeather method
+```html
 <script type="text/javascript">
   var weatherForecast; function init() {weatherForecast = new getWeather(document.getElementById('forecast')}
 </script>
+```
 
 #### Calling the getWeather method
+```html
 <script async defer
 src="https://www.getmyweather.com/getWeather?key=<YOUR_KEY>&callback=init&location=<LATITUDE>:<LONGITUDE>&specificity=<SPECIFICITY>&time=<TIME>">
 </script>
+```
 
 #### Sample return package
+```html
 Upon success, the getWeather function returns the following HTML structure (values are samples).
 <div class="forecast">
 <div class="temperature">78</div>
@@ -47,6 +53,7 @@ Upon success, the getWeather function returns the following HTML structure (valu
 <div class="chanceRain">30</div>
 <div class="trust">80</div>
 </div>
+```
 
 
 Replace YOUR_KEY with your API key.
