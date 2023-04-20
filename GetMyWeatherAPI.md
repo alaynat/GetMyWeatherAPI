@@ -2,12 +2,17 @@
 
 Welcome to the documentation for the **GetMyWeather API**! This API provides highly customizable weather information for web developers to include in their applications or websites. 
 
+# Table of Contents
+- [Introduction](#introduction)
+- [Prerequisites for Use](#prerequisites-for-use)
+- [Parameters](#parameters)
+- [How to use GetMyWeather](#how-to-use-GetMyWeather)
 
 ## Introduction
 
 The **GetMyWeather API** provides up-to-date and reliable weather information for developers to integrate into their web applications. The API allows developers to retrieve weather information based on their desired location, date and time, and radius. The *getWeather* method returns an HTML package containing the requested weather data.
 
-## Prerequisites for use
+## Prerequisites for Use
 
 To use the *getWeather* method, you need an API key. You can register for an API key at [https://getmyweather.com](https://getmyweather.com). Cost information is provided on the website.
 
