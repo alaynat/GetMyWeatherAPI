@@ -21,9 +21,9 @@ The getWeather method has the following parameters:
 | Input     | Required/Optional | Description                                                     |
 |-----------|-------------------|-----------------------------------------------------------------|
 |location   | required          | the location to retrieve weather data for (e.g., "New York, NY")|
-|radius     | optional          | the radius (in kilometers) around the location to retrieve weather data for (e.g., "10" for a 10-kilometer radius)|
-|date       | optional          |the date to retrieve weather data for (in the format "YYYY-MM-DD")|
-|time       | optional          |the time to retrieve weather data for (in the format "HH:MM:SS")|
+|radius     | optional          | the radius (in kilometers) around the location to retrieve weather data (in meters. Minimum value is 10; maximum is
+100,000.)|
+|time       | optional          |the time to retrieve weather data for (in hours. Decimals are allowed.)|
 |trust      |optional           |a value between 1 and 100 that represents the reliability of the forecast (1 is very unreliable, 100 is absolutely reliable). The default value is 100|
 
 ## How to use GetMyWeather
