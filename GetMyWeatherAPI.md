@@ -69,7 +69,7 @@ The HTML package returned by the *getWeather* method includes the requested weat
 
 The *trust* parameter is a value between 1 and 100 that represents the reliability of the forecast (1 is very unreliable, 100 is absolutely reliable). The *trust* value can be affected by the specificity of the location, date, and time parameters. A large *radius* value and/or a large *time* value will decrease the *trust* value. The *trust* value can be used by web developers to decide how to present the weather information to their users. 
 
-**GetMyWeather API** will return the historical average if the forecast is more than two weeks in the future.
+**GetMyWeather API** returns the historical average if the forecast is more than two weeks in the future.
 
 ## Errors
 Possible error conditions include invalid API keys and invalid parameter values. If an error occurs, the *getWeather* method will return an error message instead of the HTML package. 
