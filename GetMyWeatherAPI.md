@@ -26,10 +26,10 @@ To use the *getWeather* method, you need an API key. You can register for an API
 The getWeather method has the following parameters:
 | Input      | Required/Optional | Description                                                     |
 |------------|-------------------|-----------------------------------------------------------------|
-|Location    | required          | the location to retrieve weather data for (as lattitude/longitude, in ISO 6709 format).|
-|Specificity | optional          | the radius around the location to retrieve weather data (in meters. Minimum value is 10; maximum is 100,000.)|
-|Time        | optional          | the time from now to retrieve weather data for (in hours. Decimals are allowed.)|
-|Key         | required          | an API key is provided by GetMyWeather upon registration to use the API.|
+|Location    | Required          | The location to retrieve weather data for (as lattitude/longitude, in ISO 6709 format).|
+|Specificity | Required          | The radius around the location to retrieve weather data (in meters. Minimum value is 10; maximum is 100,000.)|
+|Time        | Required          | The time from now to retrieve weather data for (in hours. Decimals are allowed.)|
+|Key         | Required          | The API key is provided by GetMyWeather upon registration to use the API.|
 
 ## How to use GetMyWeather
 
