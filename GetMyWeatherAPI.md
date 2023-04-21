@@ -60,16 +60,16 @@ Replace YOUR_KEY with your API key. Each forcase must have a separate call using
 Upon success, the *getWeather* method returns the following HTML structure (values are samples).
 ```html
 <div class="forecast">
-<div class="temperature">78</div>
-<div class="windspeed">15</div>
-<div class="chanceRain">30</div>
-<div class="trust">80</div>
+  <div class="temperature">78</div>
+  <div class="windspeed">15</div>
+  <div class="chanceRain">30</div>
+  <div class="trust">80</div>
 </div>
 ```
 
 The *getWeather* method takes an object as its first parameter, with properties for the parameters listed above. The second parameter is a callback function that takes the returned HTML package as its argument.
 
-The HTML package returned by the *getWeather* method includes the requested weather data, formatted according to the API's specifications. The trust parameter can affect the trust value (the reliability of the forecast), as described below.
+The HTML package returned by the *getWeather* method includes the requested weather data, formatted according to the API's specifications. The return package includes temperature in Fahrenheit, windspeed in miles per hour, chance of rain as a percentage, and the reliability of the focast defined as trust. 
 
 
 ### Trust Value
