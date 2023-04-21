@@ -26,14 +26,14 @@ To use the *getWeather* method, you need an API key. You can register for an API
 The getWeather method has the following parameters:
 | Input      | Required/Optional | Description                                                     |
 |------------|-------------------|-----------------------------------------------------------------|
-|Location    | Required          | The location to retrieve weather data for (as lattitude/longitude, in ISO 6709 format).|
-|Specificity | Required          | The radius around the location to retrieve weather data (in meters. Minimum value is 10; maximum is 100,000.)|
-|Time        | Required          | The time from now to retrieve weather data for (in hours. Decimals are allowed.)|
+|Location    | Required          | The location to retrieve weather data for, entered as lattitude/longitude in ISO 6709 format.|
+|Specificity | Required          | The radius around the location to retrieve weather data, in meters. Minimum value is 10; maximum is 100,000.|
+|Time        | Required          | The time from now to retrieve weather data for, in hours. Decimals are allowed.|
 |Key         | Required          | The API key is provided by GetMyWeather upon registration to use the API.|
 
 ## How to use GetMyWeather
 
-Insert the following HTML to the place where the forecast results should appear.
+Insert the following HTML where the forecast results should appear.
 
 ```html
 <div id="forecast"> </div>
