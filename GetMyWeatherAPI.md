@@ -16,7 +16,7 @@ Welcome to the **GetMyWeather API**! This API provides highly customizable weath
 
 ## Introduction
 
-The **GetMyWeather API** provides up-to-date and reliable weather information for developers to integrate into their web applications. The API allows developers to retrieve weather information based on their desired location, date and time, and radius. The *getWeather* method returns an HTML package containing the requested weather data.
+The **GetMyWeather API** provides up-to-date and reliable weather information for developers to integrate into their web applications. The API allows developers to retrieve weather information based on their desired location, time, and radius. The **GetMyWeather API** is supported by all modern browers that enable Javascript. Using the *getWeather* method, **GetMyWeather API** returns an HTML package containing the requested weather data.
 
 ## Prerequisites for Use
 
@@ -33,7 +33,7 @@ The getWeather method has the following parameters:
 
 ## How to use GetMyWeather
 
-**GetMyWeather** replaces the following HTML with the retuned results:
+Insert the following HTML to the place where the forecast results should appear.
 
 ```html
 <div id="forecast"> </div>
@@ -46,7 +46,7 @@ The getWeather method has the following parameters:
   var weatherForecast; function init() {weatherForecast = new getWeather(document.getElementById('forecast')}
 </script>
 ```
-The **GetMyWeather API** must be initalized once per web session to establish a connection between the host server and the GetMyWeather server.
+The **GetMyWeather API** must be initiated once per web session to establish a connection between the host server and the GetMyWeather server.
 
 #### Calling the getWeather method
 ```html
@@ -55,7 +55,7 @@ src="https://www.getmyweather.com/getWeather?key=<YOUR_KEY>&callback=init&locati
      <LONGITUDE>&specificity=<SPECIFICITY>&time=<TIME>">
 </script>
 ```
-Replace YOUR_KEY with your API key. Each forcase must have a separate call using the getWeather method.
+Replace YOUR_KEY with your API key. Each forcast must have a separate call using the *getWeather* method and will be static until a new call is initiated.
 
 #### Returning the package
 Upon success, the *getWeather* method returns the following HTML structure (values are samples).
@@ -82,5 +82,5 @@ The *trust* value is a number between 1 and 100 that represents the reliability 
 ## Errors
 Possible error conditions include invalid API keys, invalid parameter values, parameter out of range, and server unavailable. If an error occurs, the *getWeather* method will return an error message instead of the HTML package. 
 
-**GetMyWeather API** is supported by all modern browers that enable Javascript.
+
 
