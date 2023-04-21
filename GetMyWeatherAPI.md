@@ -7,6 +7,8 @@ Welcome to the documentation for the **GetMyWeather API**! This API provides hig
 - [Prerequisites for Use](#prerequisites-for-use)
 - [Parameters](#parameters)
 - [How to use GetMyWeather](#how-to-use-GetMyWeather)
+- [Example JavaScript](#example-javascript)
+-- [Initializing the getWeather method](#Initializing-the-getWeather-method)
 
 ## Introduction
 
