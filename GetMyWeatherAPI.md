@@ -51,7 +51,8 @@ The **GetMyWeather API** must be initalized once per web session to establish a 
 #### Calling the getWeather method
 ```html
 <script async defer
-src="https://www.getmyweather.com/getWeather?key=<YOUR_KEY>&callback=init&location=<LATITUDE>:<LONGITUDE>&specificity=<SPECIFICITY>&time=<TIME>">
+src="https://www.getmyweather.com/getWeather?key=<YOUR_KEY>&callback=init&location=<LATITUDE>:
+     <LONGITUDE>&specificity=<SPECIFICITY>&time=<TIME>">
 </script>
 ```
 Replace YOUR_KEY with your API key. Each forcase must have a separate call using the getWeather method.
